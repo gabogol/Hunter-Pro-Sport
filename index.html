@@ -19,35 +19,41 @@
   <title>Hunter Pro Sport</title>
 </head>
 
-<body>
-  <div class="wrapper">
-    <!-- Header -->
-    <nav class="navbar bg-light justify-content-center mb-5">
-      <a class="navbar-brand" href="#">
-        <h1 class="text-hide">Hunter Pro Sport</h1>
-        <img src="img/logo.svg" width="130" alt="">
-      </a>
-    </nav>
-
-    <!--Contenido-->
-    <div class="container-fluid pt-5">
+<body class="home">
+  <!-- Nav -->
+  <nav class="navbar bg-light justify-content-center mb-2 mb-sm-4">
+    <a class="navbar-brand" href="#">
+      <h1 class="text-hide">Hunter Pro Sport</h1>
+      <img src="img/logo.svg" class="img-fluid brand" alt="">
+    </a>
+  </nav>
+  <main role="main">
+  <!--Contenido-->
+    <div class="container py-2 py-sm-4">
       <div class="row text-center">
         <div class="col">
-          <h2 class="text-uppercase display-4 mb-3">Bienvenido</h2>
+          <h2 class="text-uppercase mb-3">Bienvenido</h2>
           <p class="lead">Ingrese su correo</p>
           <!--Form ingreso-->
-          <form action="">
+          <form action="" id="ingreso">
             <div class="form-row justify-content-center">
-              <div class="col-md-3">
-                  <input type="email" class="form-control" id="email" placeholder="alguien@example.com">
+              <div class="col-lg-4 col-md-6">
+                <input type="email" class="form-control" id="email" placeholder="alguien@example.com">
               </div>
             </div>
-            <button type="submit" class="btn btn-lg btn-enter mt-3">Entrar</button>
+            <button type="submit" class="btn btn-enter mt-3 px-5">Entrar</button>
           </form>
         </div>
       </div>
     </div>
-  </div>
+  </main>
+  <!--Footer-->
+  <footer class="footer fixed-bottom mt-auto py-4">
+    <div class="container">
+      <span class="dark">Hunter Pro Sport © 2019</span>
+    </div>
+  </footer>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

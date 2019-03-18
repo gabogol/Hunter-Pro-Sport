@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=K2D:400,700|Lato:400,700" rel="stylesheet">
+
+    <!--Style-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hunter Pro Sport</title>
+</head>
+
+<body class="page">
+    <!-- Nav -->
+    <nav class="navbar justify-content-center mb-1">
+        <a class="navbar-brand" href="#">
+            <h1 class="text-hide">Hunter Pro Sport</h1>
+            <img src="img/logo.svg" class="img-fluid brand" alt="">
+        </a>
+    </nav>
+    <!--Usuario-->
+    <div class="d-flex border-bottom pr-5 pb-3 mb-5">
+        <div class="ml-auto">
+            <div class="row no-gutters">
+                <div class="col-md-3">
+                    <img src="img/user.svg" class="img-fluid text-left" width="40">
+                </div>
+                <div class="col-md-9 pl-3">
+                    <span><strong>Jaime Zamora</strong></span><br>
+                    <span>UC Renca</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main role="main">
+        <!--Contenido-->
+        <div class="container" class="mt-4">
+            <div class="row">
+                <!--Col Seleccionar jugador-->
+                <div class="col-md-3">
+                    <h3 class="text-uppercase">Seleccionar jugador</h3>
+                    <input type="search" class="form-control ds-input mb-2" id="search-input" placeholder="Buscar..."
+                        autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false">
+                    <ul class="jugador">
+                        <li><a href="#">Manuel Navarro Duran</a></li>
+                        <li><a href="#">Jesús Molina Moya</a></li>
+                        <li><a href="#">Marc Moya Garrido</a></li>
+                        <li><a href="#">Óliver Mendez Moya</a></li>
+                        <li><a href="#">Luis Marti Marquez</a></li>
+                        <li><a href="#">Isaac Ortega Torres</a></li>
+                        <li><a href="#">Samuel Sanchez Caballero</a></li>
+                        <li><a href="#">Asier Herrera Gomez</a></li>
+                        <li><a href="#">Jorge Garrido Ruiz</a></li>
+                        <li><a href="#">Adam Marti Flores</a></li>
+                        <li><a href="#">Leo Medina Vega</a></li>
+                        <li><a href="#">Guillermo Blanco Saez</a></li>
+                        <li><a href="#">Gonzalo Medina Gil</a></li>
+                        <li><a href="#">Gerard Carmona Torres</a></li>
+                        <li><a href="#">Arnau Vargas Garrido</a></li>
+                        <li><a href="#">Manuel Gomez Vidal</a></li>
+                        <li><a href="#">Álvaro Costa Guerrero</a></li>
+                        <li><a href="#">Asier Herrera Gomez</a></li>
+                        <li><a href="#">Jorge Garrido Ruiz</a></li>
+                        <li><a href="#">Adam Marti Flores</a></li>
+                        <li><a href="#">Leo Medina Vega</a></li>
+                        <li><a href="#">Guillermo Blanco Saez</a></li>
+                        <li><a href="#">Gonzalo Medina Gil</a></li>
+                        <li><a href="#">Gerard Carmona Torres</a></li>
+                        <li><a href="#">Arnau Vargas Garrido</a></li>
+                        <li><a href="#">Manuel Gomez Vidal</a></li>
+                        <li><a href="#">Álvaro Costa Guerrero</a></li>
+                    </ul>
+                </div>
+                <!--Col evaluacion-->
+                <div class="col-md-9 mt-4 px-5">
+                    <div class="row">
+                        <!--Col perfil jugador-->
+                        <div class="col-md-6">
+                            <img src="img/user.svg" width="120" class="img-fluid mb-3" alt="">
+                            <h3 class="text-uppercase">Jesús Molina Moya</h3>
+                            <p>Fecha de nacimiento: 2 de Diciembre de 2001</p>
+                            <p>Escuela: Unión Española</p>
+                            <p>Tutor: Luis Salinas</p>
+                        </div>
+                        <!--Col form jugador-->
+                        <div class="col-md-6 form-jugador">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="altura">Altura (cm):</label>
+                                    <input type="text" class="form-control" id="altura" placeholder="170">
+                                </div>
+                                <div class="form-group">
+                                    <label for="peso">Peso (kg):</label>
+                                    <input type="text" class="form-control" id="peso" placeholder="170">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lateralidad">Lateralidad:</label>
+                                    <select class="form-control" id="lateralidad">
+                                        <option>Diestro</option>
+                                        <option>Zurdo</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lateralidad">Complexión:</label>
+                                    <select class="form-control" id="lateralidad">
+                                        <option>Delgada</option>
+                                        <option>Mediana</option>
+                                        <option>Robusta</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--Evaluacion-->
+                    <div class="row my-5">
+                        <div class="col-md-12">
+                            <h3 class="text-uppercase text-center">Evaluación</h3>
+                            <!--Acordion-->
+                            <div class="accordion" id="Evaluacion">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne"> Aspectos técnicos </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#Evaluacion">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                            nesciunt
+                                            you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                Collapsible Group Item #2
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#Evaluacion">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                            nesciunt
+                                            you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree"> Collapsible Group Item #3 </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#Evaluacion">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor
+                                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                            nesciunt
+                                            you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer mt-auto py-4">
+        <div class="container">
+            <span class="dark">Hunter Pro Sport © 2019</span>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

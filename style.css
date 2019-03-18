@@ -9,12 +9,11 @@
 }
 html {
     position: relative;
-    height: 100%;
     overflow-x: hidden !important;
 }
 body {
-    height: 100%;
     line-height: 120% !important;
+    height: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -24,9 +23,14 @@ body {
     overflow-y: scroll; /* has to be scroll, not auto */
     -webkit-overflow-scrolling: touch;
 }
-.wrapper {
+
+.home {
     background: url('img/bg.jpg') center top no-repeat;
-    height: 100%;
+    background-size: cover;
+}
+.page {
+    /*background: url('img/bg2.jpg') center top no-repeat;*/
+    background-size: cover;
 }
 
 /********** Links & type *********+*/
@@ -38,7 +42,7 @@ a:focus {
     transition: all 0.3s ease-in-out;
 }
 a:hover {
-    color: #f0b800;
+    color: #3DAE2B;
     text-decoration: none;
 }
 .dark {
@@ -51,19 +55,85 @@ h1, h2, h3, h4 {
     font-family: 'K2D', sans-serif;
     font-weight: bold;
 }
+h2 {
+    font-size: 2.5rem;
+}
+
 
 /********** Header *********+*/
 .bg-light {
-    background-color: transparent!important;
+    background-color: transparent !important;
+}
+.brand {
+    width: 130px;
 }
 /********** Form *********+*/
-.form-control {
+#ingreso .form-control {
     height: calc(2.5em + .75rem + 2px);
     text-align: center;
 }
 .btn-enter {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-    border-radius: 8px;
+    background: #3dae2b;
+    background: -moz-linear-gradient(45deg, #3dae2b 0%, #008556 50%, #3dae2b 100%);
+    background: -webkit-linear-gradient(45deg, #3dae2b 0%,#008556 50%,#3dae2b 100%);
+    background: linear-gradient(45deg, #3dae2b 0%,#008556 50%,#3dae2b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3dae2b', endColorstr='#3dae2b',GradientType=1 );
+    border-color: #3dae2b;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+/********** Lista *********+*/
+.jugador {
+    background: #D9EED1;
+    height: 480px;
+    overflow: scroll;
+    border-radius: 10px;
+    padding: 30px 20px;
+    font-size: .9rem;
+    line-height: 1.7;   
+    list-style: none !important;
+}
+.jugador a {
+    padding: 0px 10px;
+    display: block;
+    width: 100%;
+}
+.jugador a:hover, .jugador a:active  {
+    background:#323e48;
+    color: #fff;
+}
+
+/********** Evaluación *********+*/
+.card-header {
+    padding: .25rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #323E48;
+    color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.btn-link {
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none !important;
+
+}
+.btn-link:hover {
+    color: #008556;
+    text-decoration: none;
+
+}
+
+/********** Footer *********+*/
+.footer {
+    background: #323E48;
+    text-align: center;
+}
+
+/********** Responsive *********+*/
+@media (max-width: 576px) {
+    .brand {
+        width: 100px;
+    }
 }
