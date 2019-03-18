@@ -29,7 +29,7 @@ body {
     background-size: cover;
 }
 .page {
-    /*background: url('img/bg2.jpg') center top no-repeat;*/
+    background: url('img/bg2.jpg') center top no-repeat;
     background-size: cover;
 }
 
@@ -122,6 +122,15 @@ h2 {
 .btn-link:hover {
     color: #ccc;
     text-decoration: none;
+}
+
+/********** Emblema *********+*/
+.emblema {
+    background: url('img/emblema.png') center no-repeat;
+    background-size: 100% 110%;
+    height: auto;
+    padding: 1.75rem 2rem;
+    
 }
 
 /********** Footer *********+*/
