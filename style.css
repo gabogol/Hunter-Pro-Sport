@@ -115,14 +115,13 @@ h2 {
 }
 .btn-link {
     font-weight: 400;
-    color: #ffffff;
+    color: #fff;
     text-decoration: none !important;
 
 }
 .btn-link:hover {
-    color: #008556;
+    color: #ccc;
     text-decoration: none;
-
 }
 
 /********** Footer *********+*/
